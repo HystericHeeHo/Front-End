@@ -22,9 +22,20 @@ if(!localStorage.getItem('name')) {
   setUserName();
   } else {
     var storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Welcome to Learning about tarot arcanas,' + storedName;
+    myHeading.textContent = 'Welcome to Learning about tarot arcanas, ' + storedName;
   }
-  
+
   myButton.onclick = function() {
   setUserName();
+}
+
+var myJokeButton= document.querySelector('input');
+
+
+function wow() {
+  var myJoke = alert('Much click, Such Function, Many Javascript, Wow.')
+}
+
+  myJokeButton.onclick = function() {
+  wow();
 }
