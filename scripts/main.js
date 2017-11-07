@@ -28,3 +28,14 @@ if(!localStorage.getItem('name')) {
   myButton.onclick = function() {
   setUserName();
 }
+
+var myJokeButton= document.querySelector('input');
+
+
+function wow() {
+  var myJoke = alert('Much click, Such Function, Many Javascript, Wow.')
+}
+
+  myJokeButton.onclick = function() {
+  wow();
+}
