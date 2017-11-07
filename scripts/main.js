@@ -10,7 +10,7 @@ myImage.onclick = function() {
 }
 
 var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
+var myHeading = document.querySelector('h2');
 
 function setUserName() {
   var myName = prompt('Please enter your name:')
@@ -22,9 +22,9 @@ if(!localStorage.getItem('name')) {
   setUserName();
   } else {
     var storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Welcome to Learning about tarot arcanas,' + storedName;
+    myHeading.textContent = 'Welcome to Learning about tarot arcanas, ' + storedName;
   }
-  
+
   myButton.onclick = function() {
   setUserName();
 }
