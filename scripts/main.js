@@ -1,3 +1,4 @@
+//Emperor picture changing function
 var myImage = document.querySelector('img');
 
 myImage.onclick = function() {
@@ -9,6 +10,7 @@ myImage.onclick = function() {
     }
 }
 
+//set username on start and button function
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h2');
 
@@ -29,9 +31,10 @@ if(!localStorage.getItem('name')) {
   setUserName();
 }
 
+//doge button selector
 var myJokeButton= document.querySelector('input');
 
-
+//doge button function
 function wow() {
   var myJoke = alert('Much click, Such Function, Many Javascript, Wow.')
 }
